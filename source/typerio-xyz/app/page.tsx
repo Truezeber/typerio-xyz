@@ -4,7 +4,7 @@ import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
 export default function Home() {
   const typerioConfig: TyperioConfig = {
     frames: ["▮", "▯"],
-    speed: 50,
+    speed: 100,
   };
 
   const topObjects: TyperioInput[] = [

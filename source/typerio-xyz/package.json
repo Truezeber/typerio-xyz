@@ -13,7 +13,7 @@
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.6",
-    "typerio-react": "^1.0.1"
+    "typerio-react": "^1.0.3"
   },
   "devDependencies": {
     "@types/node": "^20",

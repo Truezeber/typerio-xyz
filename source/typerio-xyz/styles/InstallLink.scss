@@ -11,18 +11,42 @@
 
     overflow: hidden;
 
-    & h2, p {
+    & .title, .command {
         text-align: center;
     }
 
-    & p {
+    .wrapper {
+        display: flex;
+        justify-content: center;
+
+        background-color: $grey1;
+        height: 40%;
+        width: 100%;
+    }
+
+    & .command {
         font-family: "Space Mono", monospace;
         font-weight: 400;
         font-style: normal;
 
         color: $grey2;
-        background-color: $grey1;
+        
 
-        height: 30%;
+        height: fit-content;
+        width: fit-content;
+    }
+    & .icon {
+        transition: 0.2s;
+
+        width: 15px;
+        position: relative;
+        bottom: 20%;
+
+        &:hover {
+            transition: 0.2s;
+            filter: brightness(0) saturate(100%) invert(68%) sepia(7%) saturate(445%) hue-rotate(135deg) brightness(96%)
+                contrast(81%);
+            cursor: pointer;
+        }
     }
 }

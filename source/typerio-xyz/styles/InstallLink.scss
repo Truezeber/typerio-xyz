@@ -6,4 +6,23 @@
     height: 100px;
 
     margin: 20px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    & h2, p {
+        text-align: center;
+    }
+
+    & p {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+
+        color: $grey2;
+        background-color: $grey1;
+
+        height: 30%;
+    }
 }

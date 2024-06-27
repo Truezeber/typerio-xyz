@@ -1,4 +1,9 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+import path from "path";
 
-export default nextConfig;
+export default {
+  sassOptions: {
+    includePaths: [path.join(new URL("./styles", import.meta.url).pathname)],
+  },
+  reactStrictMode: false,
+};

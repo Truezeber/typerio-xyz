@@ -3,8 +3,8 @@ import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
 
 export default function Home() {
   const typerioConfig: TyperioConfig = {
-    frames: ["▮", "▯"],
-    speed: 100,
+    frames: ["", "_"],
+    speed: 50,
   };
 
   const topObjects: TyperioInput[] = [
@@ -14,7 +14,7 @@ export default function Home() {
       element: "h1",
     },
     {
-      text: "Simple and easy-to-use npm package for creating such animations",
+      text: "Simple and easy-to-use npm package for creating such animations!",
       style: "typerio-description",
       element: "p",
     },

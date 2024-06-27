@@ -1,5 +1,7 @@
 import { Typerio } from "typerio-react";
 import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
+import InstallLink from "@/components/InstallLink";
+import "@/styles/home.scss";
 
 export default function Home() {
   const typerioConfig: TyperioConfig = {
@@ -20,8 +22,14 @@ export default function Home() {
     },
   ];
   return (
-    <div className="">
-      <Typerio input={[topObjects, typerioConfig]} />
-    </div>
+    <>
+      <div className="top">
+        <Typerio input={[topObjects, typerioConfig]} />
+      </div>
+      <div className="topmid">
+        <InstallLink name={"HTML"} command={"npm i typerio"} />
+        <InstallLink name={"React"} command={"npm i typerio-react"} />
+      </div>
+    </>
   );
 }

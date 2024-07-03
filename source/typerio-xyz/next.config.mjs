@@ -1,13 +1,11 @@
 /** @type {import('next').NextConfig} */
 import path from "path";
 import withMDX from "@next/mdx";
-import remarkGfm from "remark-gfm";
-import remarkGithubBlockquoteAlert from "remark-github-blockquote-alert";
 
 const mdxOptions = {
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [remarkGfm, remarkGithubBlockquoteAlert],
+    remarkPlugins: [],
     rehypePlugins: [],
     // any other MDX options can go here
   },

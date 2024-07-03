@@ -11,7 +11,7 @@ export default function Home() {
 
   const topObjects: TyperioInput[] = [
     {
-      text: "Typerio",
+      text: "Typerio⌨️",
       style: "typerio-title",
       element: "h1",
     },
@@ -23,20 +23,20 @@ export default function Home() {
   ];
 
   const typerio = {
-    npmLink: new URL("https://www.npmjs.com/package/typerio"),
-    gitLink: new URL("https://github.com/Truezeber/typerio"),
+    npmLink: "https://www.npmjs.com/package/typerio",
+    gitLink: "https://github.com/Truezeber/typerio",
   };
 
   const typerioReact = {
-    npmLink: new URL("https://www.npmjs.com/package/typerio-react"),
-    gitLink: new URL("https://github.com/Truezeber/typerio-react"),
+    npmLink: "https://www.npmjs.com/package/typerio-react",
+    gitLink: "https://github.com/Truezeber/typerio-react",
   };
   return (
     <>
-      <div className="top">
+      <div className="top section">
         <Typerio input={[topObjects, typerioConfig]} />
       </div>
-      <div className="topmid">
+      <div className="topmid section">
         <InstallLink
           name={"HTML"}
           command={"npm i typerio"}
@@ -49,6 +49,17 @@ export default function Home() {
           npmLink={typerioReact.npmLink}
           gitLink={typerioReact.gitLink}
         />
+      </div>
+      <div className="botmid section">
+        <h2>Looks interesting?</h2>
+        <div className="wrapper">
+          <a href="/typerio">
+            <p>Typerio docs⛓️</p>
+          </a>
+          <a href="typerio-react">
+            <p>Typerio-react docs⛓️</p>
+          </a>
+        </div>
       </div>
     </>
   );

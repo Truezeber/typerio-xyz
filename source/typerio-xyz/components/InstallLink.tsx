@@ -3,8 +3,8 @@ import "@/styles/InstallLink.scss";
 interface ComponentProps {
   name: string;
   command: string;
-  npmLink: URL;
-  gitLink: URL;
+  npmLink: string;
+  gitLink: string;
 }
 
 const InstallLink: React.FC<ComponentProps> = ({
@@ -33,10 +33,10 @@ const InstallLink: React.FC<ComponentProps> = ({
         />
       </p>
       <p className="wrapper">
-        <a href={npmLink.toString()} className="link">
+        <a href={npmLink} className="link">
           <img className="link-icon" src="/npm.svg" alt="npm icon" />
         </a>
-        <a href={gitLink.toString()} className="link">
+        <a href={gitLink} className="link">
           <img className="link-icon" src="/github.svg" alt="GitHub icon" />
         </a>
       </p>

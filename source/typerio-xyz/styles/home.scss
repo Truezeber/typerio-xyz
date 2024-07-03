@@ -1,12 +1,22 @@
 .top {
-    display: flex;
-    
     flex-direction: column;
-    align-items: center;
     height: 20vh;
 }
 
-.topmid {
+.section {
     display: flex;
+    align-items: center;
     justify-content: center;
+}
+
+.botmid {
+    flex-direction: column;
+
+    a {
+        text-decoration: none;
+    }
+
+    p {
+        margin: 5px;
+    }
 }

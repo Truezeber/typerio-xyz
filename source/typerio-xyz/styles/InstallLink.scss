@@ -2,8 +2,8 @@
 
 .InstallLinkComponent {
     background-color: $brown4;
-    width: 250px;
-    height: 100px;
+    width: 16vw;
+    height: 132px;
 
     margin: 20px;
 
@@ -20,8 +20,11 @@
         justify-content: center;
 
         background-color: $grey1;
-        height: 40%;
+        height: 22%;
         width: 100%;
+
+        margin: 0;
+        border-bottom: dashed;
     }
 
     & .command {
@@ -38,15 +41,37 @@
     & .icon {
         transition: 0.2s;
 
+        opacity: 0;
+
         width: 15px;
         position: relative;
         bottom: 20%;
 
         &:hover {
             transition: 0.2s;
-            filter: brightness(0) saturate(100%) invert(68%) sepia(7%) saturate(445%) hue-rotate(135deg) brightness(96%)
-                contrast(81%);
+
+            opacity: 1;
+            
             cursor: pointer;
         }
     }
+
+    & .link {
+        
+        margin: 0px 10%;
+
+        &-icon {
+            transition: 0.2s;
+            
+            height: 90%;
+
+            &:hover {
+                transition: 0.2s;
+
+                height: 95%;
+            }
+        }
+    }
 }
+
+

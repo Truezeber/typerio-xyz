@@ -25,6 +25,14 @@ const InstallLink: React.FC<ComponentProps> = ({ name, command }) => {
           onClick={handleCopy}
         />
       </p>
+      <p className="wrapper">
+        <a href="" className="link">
+          <img className="link-icon" src="/npm.svg" alt="npm icon" />
+        </a>
+        <a href="" className="link">
+          <img className="link-icon" src="/github.svg" alt="GitHub icon" />
+        </a>
+      </p>
     </div>
   );
 };

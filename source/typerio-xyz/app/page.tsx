@@ -21,14 +21,34 @@ export default function Home() {
       element: "p",
     },
   ];
+
+  const typerio = {
+    npmLink: new URL("https://www.npmjs.com/package/typerio"),
+    gitLink: new URL("https://github.com/Truezeber/typerio"),
+  };
+
+  const typerioReact = {
+    npmLink: new URL("https://www.npmjs.com/package/typerio-react"),
+    gitLink: new URL("https://github.com/Truezeber/typerio-react"),
+  };
   return (
     <>
       <div className="top">
         <Typerio input={[topObjects, typerioConfig]} />
       </div>
       <div className="topmid">
-        <InstallLink name={"HTML"} command={"npm i typerio"} />
-        <InstallLink name={"React"} command={"npm i typerio-react"} />
+        <InstallLink
+          name={"HTML"}
+          command={"npm i typerio"}
+          npmLink={typerio.npmLink}
+          gitLink={typerio.gitLink}
+        />
+        <InstallLink
+          name={"React"}
+          command={"npm i typerio-react"}
+          npmLink={typerioReact.npmLink}
+          gitLink={typerioReact.gitLink}
+        />
       </div>
     </>
   );

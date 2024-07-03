@@ -3,9 +3,16 @@ import "@/styles/InstallLink.scss";
 interface ComponentProps {
   name: string;
   command: string;
+  npmLink: URL;
+  gitLink: URL;
 }
 
-const InstallLink: React.FC<ComponentProps> = ({ name, command }) => {
+const InstallLink: React.FC<ComponentProps> = ({
+  name,
+  command,
+  npmLink,
+  gitLink,
+}) => {
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(command);
@@ -26,10 +33,10 @@ const InstallLink: React.FC<ComponentProps> = ({ name, command }) => {
         />
       </p>
       <p className="wrapper">
-        <a href="" className="link">
+        <a href={npmLink.toString()} className="link">
           <img className="link-icon" src="/npm.svg" alt="npm icon" />
         </a>
-        <a href="" className="link">
+        <a href={gitLink.toString()} className="link">
           <img className="link-icon" src="/github.svg" alt="GitHub icon" />
         </a>
       </p>

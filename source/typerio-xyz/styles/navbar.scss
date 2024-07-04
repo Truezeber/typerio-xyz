@@ -1,0 +1,15 @@
+@import "_variables";
+
+.navbar {
+    background-color: $brown4;
+
+    padding-left: 20px;
+
+    height: 100vh;
+
+    &-wrapper {
+        position: fixed;
+        top:0;
+        bottom: 0;
+    }
+}

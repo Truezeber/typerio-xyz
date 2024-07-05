@@ -4,23 +4,31 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <div className="navbar-wrapper">
-        <p className="navbar-title">
-          <a href="/docs">Typerio Docs</a>
-        </p>
-        <div className="navbar-maingroup">
-          <p className="navbar-maingroup-title">Getting started</p>
-          <a href="/docs/typerio" className="navbar-link">
-            typerio
-          </a>
-          <a href="/docs/typerio-react" className="navbar-link">
-            typerio-react
-          </a>
+        <div className="navbar-top">
+          <p className="navbar-title">
+            <a href="/docs">Typerio Docs</a>
+          </p>
+
+          <div className="navbar-maingroup">
+            <p className="navbar-maingroup-title">Getting started</p>
+            <a href="/docs/typerio" className="navbar-link">
+              typerio
+            </a>
+            <a href="/docs/typerio-react" className="navbar-link">
+              typerio-react
+            </a>
+          </div>
+          <div className="navbar-maingroup">
+            <p className="navbar-maingroup-title">Other</p>
+            <a href="/docs/contributing" className="navbar-link">
+              Contributing
+            </a>
+          </div>
         </div>
-        <div className="navbar-maingroup">
-          <p className="navbar-maingroup-title">Other</p>
-          <a href="/docs/contributing" className="navbar-link">
-            Contributing
-          </a>
+        <div className="navbar-bottom">
+          <p className="navbar-title">
+            <a href="/docs">Homepage</a>
+          </p>
         </div>
       </div>
     </div>

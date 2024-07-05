@@ -9,28 +9,32 @@
     min-width: 150px;
 
     position: sticky;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
+
+    box-shadow: 10px 0px 3px 3px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 0px 3px 3px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 0px 3px 3px rgba(0, 0, 0, 0.75);
+
+    z-index: 2;
 
     &-title {
         font-weight: 800;
         font-size: larger;
 
-        
-
         a {
             color: $yellow;
             text-decoration: none;
 
-        &:hover {
-            text-decoration: underline;
-        }
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
 
     &-wrapper {
         position: fixed;
-        top:0;
+        top: 0;
         bottom: 0;
     }
 

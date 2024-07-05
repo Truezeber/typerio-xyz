@@ -1,12 +1,13 @@
 import "@/styles/_global.scss";
 import "@/styles/docs.scss";
+import "@/styles/atom-one-dark.css";
 import Navbar from "@/components/DocsNavbar";
 
 export default function MdxLayout({ children }: { children: React.ReactNode }) {
   return (
-    <div className="page">
+    <>
       <Navbar />
-      {children}
-    </div>
+      <div className="page">{children}</div>
+    </>
   );
 }

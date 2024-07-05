@@ -1,9 +1,18 @@
+@import "_variables";
+
 body {
     margin-top: 0;
     margin-left: 0;
 }
 
 .page {
-    display: grid;
-    grid-template-columns: 15% 85%;
+    margin-left:200px;
 }
+
+//code {
+//    background-color: $grey1;
+//    color: $grey2;
+//
+//    padding: 10px;
+//    border-radius: 10px;
+//}

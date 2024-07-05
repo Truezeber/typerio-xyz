@@ -53,11 +53,14 @@ export default function Home() {
       <div className="botmid section">
         <h2>Looks interesting?</h2>
         <div className="wrapper">
-          <a href="/docs/typerio">
+          <a href="/docs">
             <p>Typerio docs⛓️</p>
           </a>
+          <a href="/docs/typerio">
+            <p>Typerio guide⛓️</p>
+          </a>
           <a href="/docs/typerio-react">
-            <p>Typerio-react docs⛓️</p>
+            <p>Typerio-react guide⛓️</p>
           </a>
         </div>
       </div>

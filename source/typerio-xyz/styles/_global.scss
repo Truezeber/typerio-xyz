@@ -10,7 +10,7 @@ body {
     overflow-x: hidden;
 }
 
-h1,h2,h3 {
+h1,h2,h3,h4 {
     color: $yellow;
 
     font-family: "PT Serif", serif;
@@ -18,7 +18,7 @@ h1,h2,h3 {
     font-style: normal;
 }
 
-p {
+p,ul,li {
     color: $brown1;
 
     font-family: "PT Serif", serif;

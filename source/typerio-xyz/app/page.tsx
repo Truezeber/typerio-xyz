@@ -51,6 +51,14 @@ export default function Home() {
         />
       </div>
       <div className="botmid section">
+        <img
+          alt="NPM Downloads"
+          src="https://img.shields.io/npm/dy/typerio-react?label=typerio-react&color=yellow"
+        />
+        <img
+          alt="NPM Downloads"
+          src="https://img.shields.io/npm/dy/typerio?label=typerio&color=blue"
+        />
         <h2>Looks interesting?</h2>
         <div className="wrapper">
           <a href="/docs">

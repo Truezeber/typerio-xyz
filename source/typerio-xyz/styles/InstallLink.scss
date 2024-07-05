@@ -55,24 +55,25 @@
             cursor: pointer;
         }
     }
+}
 
-    & .link {
+.link {
         
-        margin: 0px 10%;
+    margin: 0px 10%;
 
-        display: flex;
-        align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        &-icon {
-            transition: 0.2s;
-            
-            height: 80%;
+    width: 50px;
 
-            &:hover {
-                transition: 0.2s;
+    &-icon {
+        transition: transform 0.2s;
+        
+        height: 80%;
 
-                height: 95%;
-            }
+        &:hover {
+            transform: scale(1.2);
         }
     }
 }

@@ -2,24 +2,48 @@ import MdxLayout from '@/components/mdx-layout'
  
 # Typerio-react
 
-## Instalation
+First of all you have to install the package from npm. You can do it using commad bellow.
 
 ```console
 $ npm i typerio-react
 ```
+The next step will be importing Typerio component in the designated place.
 
-js
+```ts
+import { Typerio } from 'typerio-react';
+```
 
-```js
-var a = 1;
+Typerio takes an array of two objects as argument. The first element is the input you want to animate. Take a look on an example of it below.
 
-const b = 2;
+```ts
+const inputArray = [
+  {
+    text: 'Text to type',
+    style: 'class-of-the-element',
+    element: 'p'
+  },
+]
+```
+You can place as many objects as you want inside of this array. They can have different HTML element, and you can use provided css class for styling it.
+The second element of argument array is so called configuration object, iside of which you have to provide animation frames and speed.
 
-const function = () => {
-    xd();
+```ts
+const configurationObject = {
+  frames: ['-', '|'],
+  speed: 100
 }
 ```
- 
+
+After that you can simply call the component with prepared arguments.
+
+```ts
+return (
+  <>
+    <Typerio input={[inputArray, configurationObject]} />
+  </>
+);
+```
+
 export default function MDXPage({ children }) {
   return <MdxLayout>{children}</MdxLayout>
 }

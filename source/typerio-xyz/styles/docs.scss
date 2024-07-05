@@ -1,18 +1,13 @@
 @import "_variables";
 
 body {
-    margin-top: 0;
-    margin-left: 0;
+    margin: 0 8px 0 0;
 }
 
 .page {
-    margin-left:200px;
+    margin-left:50px;
 }
 
-//code {
-//    background-color: $grey1;
-//    color: $grey2;
-//
-//    padding: 10px;
-//    border-radius: 10px;
-//}
+#__next {
+    display: flex;
+}

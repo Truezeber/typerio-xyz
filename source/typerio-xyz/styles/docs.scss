@@ -5,8 +5,8 @@ body {
 }
 
 .page {
-    margin-left:50px;
-    margin-bottom:50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 
     max-width: 70vw;
 }
@@ -23,8 +23,17 @@ body {
 
 .markdown-alert {
     background-color: $grey4;
-    
+
     p {
         color: $grey3;
+    }
+}
+
+a {
+    color: $brown1;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
     }
 }

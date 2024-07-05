@@ -16,6 +16,12 @@ const Navbar = () => {
             typerio-react
           </a>
         </div>
+        <div className="navbar-maingroup">
+          <p className="navbar-maingroup-title">Other</p>
+          <a href="/docs/contributing" className="navbar-link">
+            Contributing
+          </a>
+        </div>
       </div>
     </div>
   );

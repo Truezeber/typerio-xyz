@@ -11,3 +11,13 @@ body {
 #__next {
     display: flex;
 }
+
+//* markdown alert styling
+
+.markdown-alert {
+    background-color: $grey4;
+    
+    p {
+        color: $grey3;
+    }
+}

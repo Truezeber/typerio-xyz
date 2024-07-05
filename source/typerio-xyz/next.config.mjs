@@ -2,11 +2,12 @@
 import path from "path";
 import withMDX from "@next/mdx";
 import rehypeHighlight from "rehype-highlight";
+import { remarkAlert } from "remark-github-blockquote-alert";
 
 const mdxOptions = {
   extension: /\.mdx?$/,
   options: {
-    remarkPlugins: [],
+    remarkPlugins: [remarkAlert],
     rehypePlugins: [rehypeHighlight],
     // any other MDX options can go here
   },

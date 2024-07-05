@@ -17,6 +17,7 @@
     "react": "^18",
     "react-dom": "^18",
     "rehype-highlight": "^7.0.0",
+    "remark-github-blockquote-alert": "^1.2.1",
     "sass": "^1.77.6",
     "typerio-react": "^1.0.9"
   },

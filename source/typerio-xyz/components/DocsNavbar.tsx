@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <div className="navbar-bottom">
           <p className="navbar-title">
-            <a href="/docs">Homepage</a>
+            <a href="https://typerio.xyz/">Homepage</a>
           </p>
         </div>
       </div>

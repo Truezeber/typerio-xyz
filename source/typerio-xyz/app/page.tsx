@@ -31,47 +31,5 @@ export default function Home() {
     npmLink: "https://www.npmjs.com/package/typerio-react",
     gitLink: "https://github.com/Truezeber/typerio-react",
   };
-  return (
-    <>
-      <div className="top section">
-        <Typerio input={[topObjects, typerioConfig]} />
-      </div>
-      <div className="topmid section">
-        <InstallLink
-          name={"HTML"}
-          command={"npm i typerio"}
-          npmLink={typerio.npmLink}
-          gitLink={typerio.gitLink}
-        />
-        <InstallLink
-          name={"React"}
-          command={"npm i typerio-react"}
-          npmLink={typerioReact.npmLink}
-          gitLink={typerioReact.gitLink}
-        />
-      </div>
-      <div className="botmid section">
-        <img
-          alt="NPM Downloads"
-          src="https://img.shields.io/npm/dy/typerio-react?label=typerio-react&color=yellow"
-        />
-        <img
-          alt="NPM Downloads"
-          src="https://img.shields.io/npm/dy/typerio?label=typerio&color=blue"
-        />
-        <h2>Looks interesting?</h2>
-        <div className="wrapper">
-          <a href="/docs">
-            <p>Typerio docs🔗</p>
-          </a>
-          <a href="/docs/typerio">
-            <p>Typerio guide🔗</p>
-          </a>
-          <a href="/docs/typerio-react">
-            <p>Typerio-react guide🔗</p>
-          </a>
-        </div>
-      </div>
-    </>
-  );
+  return <></>;
 }

@@ -35,6 +35,7 @@ export default function Home() {
     <>
       <div className="title-wrapper">
         <h1 className="title-text">Typerio</h1>
+        <img src="./keycap.svg" alt="" className="title-icon" />
       </div>
       <div className="subtitle-wrapper">
         <p className="subtitle-text">

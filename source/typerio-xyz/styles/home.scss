@@ -18,6 +18,13 @@
     &-icon {
         height: 8vh;
         margin: 0 1vw;
+
+        transition: transform 0.2s;
+
+        animation-name: float;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
     }
 }
 
@@ -36,4 +43,18 @@
 .cards {
     display: flex;
     justify-content: center;
+}
+
+// animations
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
 }

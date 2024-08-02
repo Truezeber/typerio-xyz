@@ -27,17 +27,21 @@ const InstallLink: React.FC<ComponentProps> = ({
         <span className="command">{command}</span>
         <img
           className="icon"
-          src="/copy.svg"
+          src="/keycap.svg" //! <--- placeholder icon, replace asap
           alt="copy icon"
           onClick={handleCopy}
         />
       </p>
       <p className="wrapper">
         <a href={npmLink} className="link">
-          <img className="link-icon" src="/npm.svg" alt="npm icon" />
+          <img className="link-icon" src="/icon--npm.svg" alt="npm icon" />
         </a>
         <a href={gitLink} className="link">
-          <img className="link-icon" src="/github.svg" alt="GitHub icon" />
+          <img
+            className="link-icon"
+            src="/icon--github.svg"
+            alt="GitHub icon"
+          />
         </a>
       </p>
     </div>

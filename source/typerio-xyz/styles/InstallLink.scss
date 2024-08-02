@@ -108,6 +108,16 @@
     margin: 0;
 }
 
+.top-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.techIcon {
+    height: 5vh;
+    margin: 0px 0.5vh;
+}
+
 //animations
 
 @keyframes rotate {

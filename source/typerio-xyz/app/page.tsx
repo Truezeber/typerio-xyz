@@ -45,12 +45,14 @@ export default function Home() {
       <div className="cards">
         <InstallLink
           name={"HTML"}
+          iconLink={"/icon--html.svg"}
           command={"npm i typerio"}
           npmLink={typerio.npmLink}
           gitLink={typerio.gitLink}
         />
         <InstallLink
           name={"React"}
+          iconLink={"/icon--react.svg"}
           command={"npm i typerio-react"}
           npmLink={typerioReact.npmLink}
           gitLink={typerioReact.gitLink}

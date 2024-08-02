@@ -1,74 +1,81 @@
-// @import "_variables";
+@import "_variables";
 
-// .InstallLinkComponent {
-//     background-color: $brown4;
-//     width: 16vw;
-//     height: 132px;
+.InstallLinkComponent {
+    width: 25vw;
+    height: fit-content;
 
-//     margin: 20px;
+    margin: 20px;
 
-//     border-radius: 20px;
+    border-radius: 20px;
+    border: 2px solid $grey1;
 
-//     overflow: hidden;
+    overflow: hidden;
 
-//     & .title, .command {
-//         text-align: center;
-//     }
+    & .title {
+        text-align: left;
+        margin-left: 5%;
 
-//     .wrapper {
-//         display: flex;
-//         justify-content: center;
+        font-weight: 500;
+        font-size: 150%;
+    }
 
-//         background-color: $grey1;
-//         height: 23%;
-//         width: 100%;
+    & .command {
+        text-align: left;
+        margin-left: 5%;
+    }
 
-//         margin: 0;
-//         border-bottom: dashed;
-//     }
+    .wrapper {
+        display: flex;
+        justify-content: center;
 
-//     & .command {
-//         font-family: "Space Mono", monospace;
-//         font-weight: 400;
-//         font-style: normal;
+        background-color: $grey1;
+        height: 23%;
+        width: 100%;
 
-//         color: $grey2;
+        margin: 0;
+        border-bottom: dashed;
+    }
+
+    & .command {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+
+        color: #FFF;
         
 
-//         height: fit-content;
-//         width: fit-content;
-//     }
-//     & .icon {
-//         transition: 0.2s;
+        height: fit-content;
+        width: fit-content;
+    }
+    & .icon {
+        transition: 0.2s;
 
-//         opacity: 0;
+        opacity: 0;
 
-//         width: 15px;
-//         position: relative;
-//         bottom: 20%;
+        width: 15px;
+        position: relative;
+        bottom: 20%;
 
-//         &:hover {
-//             transition: 0.2s;
+        &:hover {
+            transition: 0.2s;
 
-//             opacity: 1;
+            opacity: 1;
             
-//             cursor: pointer;
-//         }
-//     }
-// }
+            cursor: pointer;
+        }
+    }
+}
 
-// .link {
+.link {
         
-//     margin: 0px 10%;
+    margin: 0px 10%;
 
-//     display: flex;
-//     align-items: center;
-//     justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-//     width: 50px;
+    width: 50px;
 
-//     &-icon {
-//         transition: transform 0.2s;
         
 //         height: 80%;
 
@@ -78,4 +85,24 @@
 //     }
 // }
 
+
+
+.command-wrapper {
+    display: flex;
+    align-items: center;
+
+    background-color: $grey1;
+    height: 5vh;
+    width: 100%;
+
+    margin: 0;
+}
+
+.links-wrapper {
+    display: flex;
+
+    height: 7vh;
+    width: 100%;
+    margin: 0;
+}
 

@@ -41,6 +41,20 @@ export default function Home() {
           Simple and easy-to-use npm package for creating typing animations!
         </p>
       </div>
+      <div className="cards">
+        <InstallLink
+          name={"HTML"}
+          command={"npm i typerio"}
+          npmLink={typerio.npmLink}
+          gitLink={typerio.gitLink}
+        />
+        <InstallLink
+          name={"React"}
+          command={"npm i typerio-react"}
+          npmLink={typerioReact.npmLink}
+          gitLink={typerioReact.gitLink}
+        />
+      </div>
     </>
   );
 }

@@ -23,7 +23,7 @@ const InstallLink: React.FC<ComponentProps> = ({
   return (
     <div className="InstallLinkComponent">
       <h2 className="title">{name}</h2>
-      <p className="wrapper">
+      <p className="command-wrapper">
         <span className="command">{command}</span>
         <img
           className="icon"
@@ -32,7 +32,7 @@ const InstallLink: React.FC<ComponentProps> = ({
           onClick={handleCopy}
         />
       </p>
-      <p className="wrapper">
+      <p className="links-wrapper">
         <a href={npmLink} className="link">
           <img className="link-icon" src="/icon--npm.svg" alt="npm icon" />
         </a>

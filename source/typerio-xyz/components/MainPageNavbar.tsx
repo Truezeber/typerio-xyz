@@ -12,12 +12,16 @@ const PageNavbar = () => {
         <p className="navbar-logo-text">Typerio</p>
       </div>
       <div className="navbar-links">
-        <a className="navbar-links-link" id="news" href="/news">
-          news
-        </a>
-        <a className="navbar-links-link" id="docs" href="/docs">
-          docs
-        </a>
+        <div className="navbar-links-linkWrapper">
+          <a className="navbar-links-link" id="news" href="/news">
+            news
+          </a>
+        </div>
+        <div className="navbar-links-linkWrapper">
+          <a className="navbar-links-link" id="docs" href="/docs">
+            docs
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -76,16 +76,18 @@
 
     width: 50px;
 
+    &-icon {
+        transition: transform 0.2s;
         
-//         height: 80%;
+        height: 5vh;
 
-//         &:hover {
-//             transform: scale(1.2);
-//         }
-//     }
-// }
-
-
+        &:hover {
+            animation-name: rotate;
+            animation-duration: 1s;
+            //animation-iteration-count: infinite;
+        }
+    }
+}
 
 .command-wrapper {
     display: flex;
@@ -106,3 +108,22 @@
     margin: 0;
 }
 
+//animations
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

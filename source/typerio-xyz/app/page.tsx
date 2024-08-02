@@ -31,5 +31,16 @@ export default function Home() {
     npmLink: "https://www.npmjs.com/package/typerio-react",
     gitLink: "https://github.com/Truezeber/typerio-react",
   };
-  return <></>;
+  return (
+    <>
+      <div className="title-wrapper">
+        <h1 className="title-text">Typerio</h1>
+      </div>
+      <div className="subtitle-wrapper">
+        <p className="subtitle-text">
+          Simple and easy-to-use npm package for creating typing animations!
+        </p>
+      </div>
+    </>
+  );
 }

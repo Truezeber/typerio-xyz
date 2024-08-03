@@ -18,6 +18,7 @@ const InstallLink: React.FC<ComponentProps> = ({
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(command);
+      alert("Command copied!");
     } catch (error) {
       console.error(`Cannot copy: ${error}`);
     }

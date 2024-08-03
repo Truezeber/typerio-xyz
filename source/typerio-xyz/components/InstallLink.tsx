@@ -39,10 +39,10 @@ const InstallLink: React.FC<ComponentProps> = ({
         />
       </p>
       <p className="links-wrapper">
-        <a href={npmLink} className="link">
+        <a title="NPM page" href={npmLink} className="link">
           <img className="link-icon" src="/icon--npm.svg" alt="npm icon" />
         </a>
-        <a href={gitLink} className="link">
+        <a title="GitHub repository" href={gitLink} className="link">
           <img
             className="link-icon"
             src="/icon--github.svg"

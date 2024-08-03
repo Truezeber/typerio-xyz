@@ -1,6 +1,8 @@
 import { Typerio } from "typerio-react";
 import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
 import InstallLink from "@/components/InstallLink";
+import PageNavbar from "@/components/MainPageNavbar";
+
 import "@/styles/home.scss";
 
 export default function Home() {
@@ -33,6 +35,7 @@ export default function Home() {
   };
   return (
     <>
+      <PageNavbar />
       <div className="title-wrapper">
         <h1 className="title-text">Typerio</h1>
         <img src="./keycap.svg" alt="" className="title-icon" />

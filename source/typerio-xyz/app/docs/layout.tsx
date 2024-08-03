@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/_global.scss";
 
 export const metadata: Metadata = {
-  title: "Typerio",
+  title: "Typerio docs",
   description: "Typerio website",
 };
 
@@ -17,10 +17,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/typerio-logo.svg" sizes="any" />
       </head>
-      <body>
-        {children}
-        {/* <Footer /> */}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

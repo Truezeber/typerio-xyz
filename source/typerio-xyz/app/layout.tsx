@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
-import PageNavbar from "@/components/mainpageNavbar";
 
 import "@/styles/_global.scss";
 
@@ -20,7 +19,6 @@ export default function RootLayout({
         <link rel="icon" href="/typerio-logo.svg" sizes="any" />
       </head>
       <body>
-        <PageNavbar />
         {children}
         {/* <Footer /> */}
       </body>

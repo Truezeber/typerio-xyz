@@ -1,1 +1,44 @@
-# advanced-usage
+# Advanced usage
+
+First, let's explain what the *configuration object* mentioned in the earlier article is. It is an object with the following properties:
+
+```js
+{
+    frames:['', ''],       //Array of two strings which are the frames of the animation;
+    prefix: '',        //String which will be the prefix of the animation;
+    speed: 20,     //Integer beign used as the interval between animation frames. Higher number = slower animation;
+    target: HTMLElement,       //HTML element inside of which animation will be rendered;
+    clearingPolicy: true,      //Boolean value, if true all content inside of the target will be deleted;
+},
+```
+
+It can be used in several different ways. One is to pass it straight to *typerioRender()* every time, as we did before. Another example:
+
+```js
+typerioRender(inputArray, {
+    frames: ['|', '_'],
+    prefix: '$',
+    speed: 60,
+    target: targetWindow,
+    clearingPolicy: false
+});
+```
+
+We can also configure *default configuration object*. Data from this object is used by Typerio if we do not pass some value in *typerioRender()*. Take a look at this code:
+
+```js
+typerioConfig.setDefaultConfig({
+  newFrames: ['o', 'O'],
+  newPrefix: '@',
+  newSpeed: 12,
+  newTarget: element,
+  newClearingPolicy: true,
+});
+```
+
+The syntax differs from that passed manually, but the value types are the same.
+We can also get the current *default configuration object* using
+
+```js
+typerioConfig.getDefaultConfig();
+```

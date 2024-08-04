@@ -42,3 +42,12 @@ We can also get the current *default configuration object* using
 ```js
 typerioConfig.getDefaultConfig();
 ```
+
+> [!CAUTION]
+> The default target value is set to `{}`, which means that you have to declare this value in `typerioConfig` or pass it everytime via `typerioRender()` function.
+
+*typerioRender()* is an asynchronous function. What follows is that we can use *await* to wait for the animation to finish.
+
+```js
+await typerioRender(inputArray);
+```

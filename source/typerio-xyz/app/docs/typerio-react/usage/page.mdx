@@ -1,1 +1,42 @@
-# usage
+# Usage
+
+Firstly import *Typerio* into your project.
+
+```ts
+import { Typerio } from 'typerio-react';
+```
+
+``Typerio`` takes an array of two objects as argument. The first element is the input you want to animate. Take a look on an example of it below.
+
+```ts
+const inputArray = [
+  {
+    text: 'Text to type',
+    style: 'class-of-the-element',
+    element: 'p'
+  },
+]
+```
+You can place as many objects as you want inside of this array. They can have different HTML element, and you can use provided css class for styling it.
+The second element of argument array is so called configuration object, iside of which you have to provide animation frames and speed.
+
+```ts
+const configurationObject = {
+  frames: ['-', '|'],
+  speed: 100
+}
+```
+
+After that you can simply call the component with prepared arguments.
+
+```tsx
+return (
+  <>
+    <Typerio input={ [inputArray, configurationObject] } />
+  </>
+);
+
+```
+
+> [!IMPORTANT]  
+> ``Typerio`` is a client-side component. Keep in mind the negative impact of its content on your site's SEO.

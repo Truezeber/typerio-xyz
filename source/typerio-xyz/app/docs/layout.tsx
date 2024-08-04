@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "@/styles/_global.scss";
 
 export const metadata: Metadata = {
-  title: "Typerio docs",
+  title: "Typerio Docs",
   description: "Typerio website",
 };
 

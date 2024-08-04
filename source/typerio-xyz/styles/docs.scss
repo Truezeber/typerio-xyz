@@ -1,25 +1,17 @@
-// @import "_variables";
+@import "_variables";
 
-// body {
-//     margin: 0 8px 0 0;
-// }
+body {
+    display: flex;
+}
 
-// .page {
-//     margin-left: 50px;
-//     margin-bottom: 50px;
+.page {
+    margin-left: 50px;
+    margin-bottom: 50px;
 
-//     max-width: 70vw;
-// }
+    max-width: 70vw;
+}
 
-// #__next {
-//     display: flex;
-
-//     position: relative;
-//     min-height: 100vh;
-//     width: 100%;
-// }
-
-// //* markdown styling
+//* markdown styling
 
 // .markdown-alert {
 //     background-color: $grey4;

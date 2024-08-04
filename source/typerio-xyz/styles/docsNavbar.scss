@@ -75,8 +75,14 @@ h2 {
 
     width: fit-content;
     height: 100vh;
+    min-height: 200px;
+    overflow: auto;
 
     padding: 0.5vh 1vw 0.5vh 1.5vw;
+
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .section {

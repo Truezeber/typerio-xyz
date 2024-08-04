@@ -21,7 +21,7 @@ const Navbar = () => {
       </div>
       <div className="section">
         <h2 className="title">Typerio</h2>
-        <ul>
+        <ul className="list">
           <li>
             <Link
               className={`link ${
@@ -66,7 +66,7 @@ const Navbar = () => {
       </div>
       <div className="section">
         <h2 className="title">Typerio React</h2>
-        <ul>
+        <ul className="list">
           <li>
             <Link
               className={`link ${
@@ -111,7 +111,7 @@ const Navbar = () => {
       </div>
       <div className="section">
         <h2 className="title">Contributing</h2>
-        <ul>
+        <ul className="list">
           <li>
             <Link
               className={`link ${

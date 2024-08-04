@@ -1,10 +1,6 @@
 @import "_variables";
 
-ul {
-    list-style-type: none;
-    padding-left: 1vw;
-    margin: 0.5vh 0;
-}
+
 
 h1 {
     font-size: 2rem;
@@ -15,6 +11,12 @@ h1 {
 
 h2 {
     font-size: 1.5rem;
+}
+
+.list {
+    list-style-type: none;
+    padding-left: 1vw;
+    margin: 0.5vh 0;
 }
 
 .link {

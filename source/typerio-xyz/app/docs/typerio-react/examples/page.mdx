@@ -1,0 +1,69 @@
+# Examples
+
+Here are a few code examples to help you see how Typerio-React works.
+
+## 1
+
+```tsx
+import React from 'react';
+import { Typerio } from 'typerio-react';
+
+const App = () => {
+  // Preparing input array
+  const inputArray = [
+    {
+      text: 'Hello',
+      style: 'text',
+      element: 'p'
+    },
+    {
+      text: 'Typerio!',
+      style: 'text',
+      element: 'p'
+    }
+  ];
+
+  // Preparing configuration object
+  const configurationObject = {
+    frames: ['|', '_'],
+    speed: 60
+  };
+
+  return (
+    <>
+      <Typerio input={[inputArray, configurationObject]} />
+    </>
+  );
+};
+
+export default App;
+
+```
+
+## 2
+
+```js
+import React from 'react';
+import { Typerio } from "typerio-react";
+import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
+
+const App: React.FC = () => {
+  const inputArray: TyperioInput[] = [
+    { text: "Lorem ipsum ", style: "test", element: "span" },
+    { text: "dolor sit amet", style: "test", element: "p" },
+  ];
+
+  const inputConfig: TyperioConfig = {
+    frames: ["|", "_"],
+    speed: 100,
+  };
+
+  return (
+    <div>
+      <Typerio input={[inputArray, inputConfig]} />
+    </div>
+  );
+};
+
+export default App;
+```

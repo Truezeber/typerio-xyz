@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 
+import "@/components/DocsNavbar";
+
 import "@/styles/_global.scss";
+import Navbar from "@/components/DocsNavbar";
 
 export const metadata: Metadata = {
   title: "Typerio Docs",
@@ -17,7 +20,10 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/typerio-logo.svg" sizes="any" />
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

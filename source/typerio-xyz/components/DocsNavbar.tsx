@@ -24,7 +24,7 @@ const Navbar = () => {
         <ul>
           <li>
             <Link
-              className={`link active ${
+              className={`link ${
                 pathname === "/docs/typerio-html/instalation" ? "active" : ""
               }`}
               href="/docs/typerio-html/instalation"

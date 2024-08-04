@@ -13,11 +13,6 @@ const PageNavbar = () => {
       </div>
       <div className="navbar-links">
         <div className="navbar-links-linkWrapper">
-          <a className="navbar-links-link" id="news" href="/news">
-            news
-          </a>
-        </div>
-        <div className="navbar-links-linkWrapper">
           <a className="navbar-links-link" id="docs" href="/docs">
             docs
           </a>

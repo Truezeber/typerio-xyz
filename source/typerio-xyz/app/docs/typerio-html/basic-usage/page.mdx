@@ -1,1 +1,43 @@
-# basic-usage
+# Basic usage
+
+To get started with Typerio, import ``typerioRender()`` function into your project.
+
+```js
+import { typerioRender } from 'typerio'
+```
+
+Now let's prepare to use this function to run the animation. Firstly you have to declare array of objects with such properiets:
+
+```js
+{
+    text: string, //Text which will be rendered.
+    style: string, //Custom CSS class.
+    HTMLelement: HTMLElement //HTML element inside of which text will be rendered. Usually p or span
+}
+```
+
+For the example purposes we will use such one:
+
+```js
+const inputArray= [
+    {
+        text: 'Hello',
+        style: 'text',
+        HTMLelement: p
+    },
+    {
+        text: 'Typerio!',
+        style: 'text',
+        HTMLelement: p
+    }
+];
+```
+
+This array will be our first argument to the function. **We also need to specify the HTML element for rendering our content** using a configuration object. This will be discussed in more detail in the next article. **For now, just know we use an object for this**. Just take a look at the code below.
+```js
+const targetWindow = document.document.querySelector(".window");
+
+typerioRender(inputArray, {target: targetWindow});
+```
+
+Congratulations, you just created your first animation using Typerio!

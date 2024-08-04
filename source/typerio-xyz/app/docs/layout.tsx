@@ -3,6 +3,10 @@ import type { Metadata } from "next";
 import "@/components/DocsNavbar";
 
 import "@/styles/_global.scss";
+import "@/styles/docs.scss";
+import "@/styles/edge-light.css";
+import "remark-github-blockquote-alert/alert.css";
+
 import Navbar from "@/components/DocsNavbar";
 
 export const metadata: Metadata = {

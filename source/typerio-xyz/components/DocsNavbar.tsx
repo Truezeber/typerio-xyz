@@ -25,9 +25,9 @@ const Navbar = () => {
           <li>
             <Link
               className={`link ${
-                pathname === "/docs/typerio-html/instalation" ? "active" : ""
+                pathname === "/docs/typerio-html/installation" ? "active" : ""
               }`}
-              href="/docs/typerio-html/instalation"
+              href="/docs/typerio-html/installation"
             >
               Instalation
             </Link>
@@ -65,14 +65,14 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="section">
-        <h2 className="title">Typerio Reacy</h2>
+        <h2 className="title">Typerio React</h2>
         <ul>
           <li>
             <Link
               className={`link ${
-                pathname === "/docs/typerio-react/instalation" ? "active" : ""
+                pathname === "/docs/typerio-react/installation" ? "active" : ""
               }`}
-              href="/docs/typerio-react/instalation"
+              href="/docs/typerio-react/installation"
             >
               Instalation
             </Link>
@@ -80,9 +80,9 @@ const Navbar = () => {
           <li>
             <Link
               className={`link ${
-                pathname === "/docs/typerio/usage" ? "active" : ""
+                pathname === "/docs/typerio-react/usage" ? "active" : ""
               }`}
-              href="/docs/typerio/usage"
+              href="/docs/typerio-react/usage"
             >
               Component usage
             </Link>
@@ -90,9 +90,9 @@ const Navbar = () => {
           <li>
             <Link
               className={`link ${
-                pathname === "/docs/typerio/typescript" ? "active" : ""
+                pathname === "/docs/typerio-react/typescript" ? "active" : ""
               }`}
-              href="/docs/typerio/typescript"
+              href="/docs/typerio-react/typescript"
             >
               Typescript
             </Link>
@@ -100,9 +100,9 @@ const Navbar = () => {
           <li>
             <Link
               className={`link ${
-                pathname === "/docs/typerio/examples" ? "active" : ""
+                pathname === "/docs/typerio-react/examples" ? "active" : ""
               }`}
-              href="/docs/typerio/examples"
+              href="/docs/typerio-react/examples"
             >
               Examples
             </Link>
@@ -147,9 +147,9 @@ const Navbar = () => {
           <li>
             <Link
               className={`link ${
-                pathname === "/docs/contributing/pull request" ? "active" : ""
+                pathname === "/docs/contributing/pull-request" ? "active" : ""
               }`}
-              href="/docs/contributing/pull request"
+              href="/docs/contributing/pull-request"
             >
               Pull requests
             </Link>

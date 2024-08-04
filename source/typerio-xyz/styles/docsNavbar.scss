@@ -1,2 +1,84 @@
 @import "_variables";
 
+ul {
+    list-style-type: none;
+    padding-left: 1vw;
+    margin: 0.5vh 0;
+}
+
+h1 {
+    font-size: 2rem;
+    a {
+        text-decoration: none;
+    }
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+.link {
+    text-decoration: none;
+    text-wrap: nowrap;
+    color: $grey4;
+    font-size: 1rem;
+    font-weight: 600;
+
+    background-color: #FFF;
+
+    border-radius: 10px;
+
+    padding: 1.5px 15px;
+    margin: 3px 0;
+    
+    display: flex;
+
+    width: 75%;
+
+    transition: 0.1s;
+
+    &:hover {
+        color: #FFF;
+        text-shadow: none;
+
+        background-color: $blue;
+
+        transition: 0.1s;
+    }
+}
+
+.active {
+    background-color: $red;
+    color: #FFF;
+
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.title {
+    color: $grey2;
+    text-shadow: 0px 2px 2px $yellow;
+
+    margin: 1.5vh 0;
+
+    a {
+        color: $grey3;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+
+    border-right: 2px solid $grey1;
+
+    width: fit-content;
+    height: 100vh;
+
+    padding: 0.5vh 1vw 0.5vh 1.5vw;
+}
+
+.section {
+    padding-left: 1vw;
+}

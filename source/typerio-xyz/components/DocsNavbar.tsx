@@ -16,12 +16,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="navTop">
         <h1 className="title">
-          <Link
-            className={`link ${pathname === "/docs" ? "active" : ""}`}
-            href="/docs"
-          >
-            Typerio Docs
-          </Link>
+          <Link href="/docs">Typerio Docs</Link>
         </h1>
       </div>
       <div className="section">
@@ -29,7 +24,7 @@ const Navbar = () => {
         <ul>
           <li>
             <Link
-              className={`link ${
+              className={`link active ${
                 pathname === "/docs/typerio-html/instalation" ? "active" : ""
               }`}
               href="/docs/typerio-html/instalation"

@@ -1,1 +1,72 @@
-# examples
+# Examples
+
+Here are a few code examples to help you see how Typerio works.
+
+## 1
+
+```js
+
+import { typerioRender, typerioConfig } from 'typerio';
+
+// Setting default configuration object
+typerioConfig.setDefaultConfig({
+    newFrames: ['o', 'O'],
+    newPrefix: '@',
+    newSpeed: 12,
+    newTarget: document.querySelector('.default-target'),
+    newClearingPolicy: true,
+});
+
+// Preparing input array
+const inputArray = [
+    {
+        text: 'Hello',
+        style: 'text',
+        HTMLelement: document.createElement('h1')
+    },
+    {
+        text: 'Typerio!',
+        style: 'text',
+        HTMLelement: document.createElement('p')
+    }
+];
+
+// Running the animation
+await typerioRender(inputArray);
+
+```
+
+## 2
+
+```js
+
+import { typerioRender } from 'typerio';
+
+// Preparing input array
+const inputArray = [
+    {
+        text: 'Lorem',
+        style: 'text',
+        HTMLelement: document.createElement('h1')
+    },
+    {
+        text: 'ipsum',
+        style: 'text',
+        HTMLelement: document.createElement('h2')
+    }
+];
+
+// Getting target HTML element
+const targetWindow = document.querySelector(".window");
+
+// starting the animation
+typerioRender(inputArray, {
+    frames: ['|', '_'],
+    prefix: '$',
+    speed: 60,
+    target: targetWindow,
+    clearingPolicy: true
+});
+
+
+```

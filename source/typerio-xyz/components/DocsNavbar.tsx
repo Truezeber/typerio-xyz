@@ -156,6 +156,12 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
+      <div className="navBot">
+        <a href="/" className="link">
+          <p> Home page</p>
+          <img src="/icon--house.svg" alt="" className="icon" />
+        </a>
+      </div>
     </div>
   );
 };

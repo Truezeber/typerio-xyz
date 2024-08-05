@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import styles from "@/styles/docsNavbar.module.scss";
+import styles from "@/styles/docsNavbar.module.css";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -15,8 +15,10 @@ const Navbar = () => {
   return (
     <div className={styles.navbar}>
       <div className={styles.navTop}>
-        <h1 className={styles.title}>
-          <Link href="/docs">Typerio Docs</Link>
+        <h1 className={`${styles.title} ${styles.titleH}`}>
+          <Link href="/docs" className={styles.titleA}>
+            Typerio Docs
+          </Link>
         </h1>
       </div>
       <div className={styles.section}>
@@ -170,7 +172,7 @@ const Navbar = () => {
       </div>
       <div className={styles.navBot}>
         <a href="/" className={styles.link}>
-          <p> Home page</p>
+          <p className={styles.p}> Home page</p>
           <img src="/icon--house.svg" alt="" className={styles.icon} />
         </a>
       </div>

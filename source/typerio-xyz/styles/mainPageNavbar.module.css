@@ -1,0 +1,79 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 5px;
+    border-bottom: 2px solid var(--grey1);
+
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+.navbarLogo {
+    display: flex;
+    padding-left: 2%;
+}
+
+.navbarLogoIcon {
+    max-width: 55px;
+}
+
+.navbarLogoText {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+
+    font-weight: 600;
+    font-size: 250%;
+    margin: 0;
+
+    color: var(--grey4);
+
+    user-select: none;
+}
+
+.navbarLinks {
+    display: flex;
+    align-items: center;
+    padding-right: 2%;
+}
+
+.navbarLinksLink {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+
+    font-weight: 500;
+    font-size: 150%;
+
+    color: var(--grey4);
+
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+}
+
+.navbarLinksLinkWrapper {
+    height: 70%;
+    width: auto;
+
+    margin: 0px 10px;
+    padding: 5px 10px;
+
+    display: flex;
+    align-items: center;
+
+    background-color: #ffff;
+
+    border-radius: 10px;
+
+    transition: 0.2s;
+}
+
+.navbarLinksLinkWrapper:hover {
+    background-color: var(--blue);
+
+    .navbar-links-link {
+        color: var(--grey2);
+    }
+}

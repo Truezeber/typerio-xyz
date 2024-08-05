@@ -1,9 +1,3 @@
-@import "_variables";
-// @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
-
-
-
 .list {
     list-style-type: none;
     padding-left: 1vw;
@@ -13,56 +7,56 @@
 .link {
     text-decoration: none;
     text-wrap: nowrap;
-    color: $grey4;
+    color: var(--grey4);
     font-size: 1rem;
     font-weight: 600;
 
-    background-color: #FFF;
+    background-color: #fff;
 
     border-radius: 10px;
 
     padding: 1.5px 15px;
     margin: 3px 0;
-    
+
     display: flex;
 
     width: 75%;
 
     transition: 0.1s;
+}
 
-    &:hover {
-        color: #FFF;
-        text-shadow: none;
+.link:hover {
+    color: #fff;
+    text-shadow: none;
 
-        background-color: $blue;
+    background-color: var(--blue);
+
+    transition: 0.1s;
+
+    .icon {
+        filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(10deg) brightness(117%) contrast(103%);
 
         transition: 0.1s;
-
-        img {
-            filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(10deg) brightness(117%) contrast(103%);
-
-            transition: 0.1s;
-        }
     }
 }
 
 .active {
-    background-color: $red;
-    color: #FFF;
+    background-color: var(--red);
+    color: #fff;
+}
 
-    &:hover {
-        background-color: $red;
-    }
+.active:hover {
+    background-color: var(--red);
 }
 
 .title {
-    color: $grey2;
-    text-shadow: 0px 2px 2px $yellow;
+    color: var(--grey2);
+    text-shadow: 0px 2px 2px var(--yellow);
 
     margin: 1.5vh 0;
 
-    a {
-        color: $grey3;
+    .titleA {
+        color: var(--grey3);
     }
 }
 
@@ -71,7 +65,7 @@
     flex-direction: column;
     justify-content: space-around;
 
-    border-right: 2px solid $grey1;
+    border-right: 2px solid var(--grey1);
 
     width: fit-content;
     height: 99vh;
@@ -84,26 +78,26 @@
     top: 0;
     left: 0;
 
-    h1 {
+    .titleH {
         font-size: 2rem;
-        a {
+        .titleA {
             text-decoration: none;
         }
     }
-    
-    h2 {
+
+    .title {
         font-size: 1.5rem;
     }
 }
 
 .navBot {
-    a {
+    .link {
         display: flex;
         justify-content: center;
 
         font-size: 1.2rem;
 
-        p {
+        .p {
             margin: 1vh 0.5vw;
         }
     }

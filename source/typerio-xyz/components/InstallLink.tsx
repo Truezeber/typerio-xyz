@@ -1,5 +1,5 @@
 "use client";
-import styles from "@/styles/InstallLink.module.scss";
+import styles from "@/styles/installLink.module.css";
 interface ComponentProps {
   name: string;
   iconLink: string;
@@ -24,7 +24,7 @@ const InstallLink: React.FC<ComponentProps> = ({
     }
   };
   return (
-    <div className={styles.InstallLinkComponent}>
+    <div className={styles.installLinkComponent}>
       <div className={styles.topWrapper}>
         <h2 className={styles.title}>{name}</h2>
         <img className={styles.techIcon} src={iconLink} alt="" />

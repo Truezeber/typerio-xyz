@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-import "@/styles/docsNavbar.scss";
+import styles from "@/styles/docsNavbar.module.scss";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -13,19 +13,21 @@ const Navbar = () => {
   };
 
   return (
-    <div className="navbar">
-      <div className="navTop">
-        <h1 className="title">
+    <div className={styles.navbar}>
+      <div className={styles.navTop}>
+        <h1 className={styles.title}>
           <Link href="/docs">Typerio Docs</Link>
         </h1>
       </div>
-      <div className="section">
-        <h2 className="title">Typerio</h2>
-        <ul className="list">
+      <div className={styles.section}>
+        <h2 className={styles.title}>Typerio</h2>
+        <ul className={styles.list}>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-html/installation" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-html/installation"
+                  ? styles.active
+                  : ""
               }`}
               href="/docs/typerio-html/installation"
             >
@@ -34,8 +36,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-html/basic-usage" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-html/basic-usage"
+                  ? styles.active
+                  : ""
               }`}
               href="/docs/typerio-html/basic-usage"
             >
@@ -44,8 +48,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-html/advanced-usage" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-html/advanced-usage"
+                  ? styles.active
+                  : ""
               }`}
               href="/docs/typerio-html/advanced-usage"
             >
@@ -54,8 +60,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-html/examples" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-html/examples" ? styles.active : ""
               }`}
               href="/docs/typerio-html/examples"
             >
@@ -64,13 +70,15 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="section">
-        <h2 className="title">Typerio React</h2>
-        <ul className="list">
+      <div className={styles.section}>
+        <h2 className={styles.title}>Typerio React</h2>
+        <ul className={styles.list}>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-react/installation" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-react/installation"
+                  ? styles.active
+                  : ""
               }`}
               href="/docs/typerio-react/installation"
             >
@@ -79,8 +87,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-react/usage" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-react/usage" ? styles.active : ""
               }`}
               href="/docs/typerio-react/usage"
             >
@@ -89,8 +97,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-react/typescript" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-react/typescript"
+                  ? styles.active
+                  : ""
               }`}
               href="/docs/typerio-react/typescript"
             >
@@ -99,8 +109,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/typerio-react/examples" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/typerio-react/examples" ? styles.active : ""
               }`}
               href="/docs/typerio-react/examples"
             >
@@ -109,13 +119,13 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="section">
-        <h2 className="title">Contributing</h2>
-        <ul className="list">
+      <div className={styles.section}>
+        <h2 className={styles.title}>Contributing</h2>
+        <ul className={styles.list}>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/contributing/coc" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/contributing/coc" ? styles.active : ""
               }`}
               href="/docs/contributing/coc"
             >
@@ -124,9 +134,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
+              className={`${styles.link} ${
                 pathname === "/docs/contributing/chosing-project"
-                  ? "active"
+                  ? styles.active
                   : ""
               }`}
               href="/docs/contributing/chosing-project"
@@ -136,8 +146,8 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/contributing/issues" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/contributing/issues" ? styles.active : ""
               }`}
               href="/docs/contributing/issues"
             >
@@ -146,8 +156,10 @@ const Navbar = () => {
           </li>
           <li>
             <Link
-              className={`link ${
-                pathname === "/docs/contributing/pull-request" ? "active" : ""
+              className={`${styles.link} ${
+                pathname === "/docs/contributing/pull-request"
+                  ? styles.active
+                  : ""
               }`}
               href="/docs/contributing/pull-request"
             >
@@ -156,10 +168,10 @@ const Navbar = () => {
           </li>
         </ul>
       </div>
-      <div className="navBot">
-        <a href="/" className="link">
+      <div className={styles.navBot}>
+        <a href="/" className={styles.link}>
           <p> Home page</p>
-          <img src="/icon--house.svg" alt="" className="icon" />
+          <img src="/icon--house.svg" alt="" className={styles.icon} />
         </a>
       </div>
     </div>

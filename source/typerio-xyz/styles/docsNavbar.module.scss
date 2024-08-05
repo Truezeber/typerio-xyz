@@ -2,16 +2,7 @@
 
 
 
-h1 {
-    font-size: 2rem;
-    a {
-        text-decoration: none;
-    }
-}
 
-h2 {
-    font-size: 1.5rem;
-}
 
 .list {
     list-style-type: none;
@@ -92,6 +83,17 @@ h2 {
     position: sticky;
     top: 0;
     left: 0;
+
+    h1 {
+        font-size: 2rem;
+        a {
+            text-decoration: none;
+        }
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 
 .navBot {

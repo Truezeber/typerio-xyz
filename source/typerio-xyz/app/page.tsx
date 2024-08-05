@@ -1,10 +1,10 @@
 import { Typerio } from "typerio-react";
 import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
-import InstallLink from "@/components/InstallLink";
 import PageNavbar from "@/components/MainPageNavbar";
+import InstallLink from "@/components/InstallLink";
 
-import "@/styles/home.scss";
-import "@/styles/_global.scss";
+//import "@/styles/global.scss";
+import styles from "@/styles/home.module.css";
 
 export default function Home() {
   const typerioConfig: TyperioConfig = {
@@ -15,7 +15,7 @@ export default function Home() {
   const topObjects: TyperioInput[] = [
     {
       text: "Typerio ",
-      style: "title-text",
+      style: `${styles.typerio}`,
       element: "h1",
     },
   ];
@@ -32,16 +32,16 @@ export default function Home() {
   return (
     <>
       <PageNavbar />
-      <div className="title-wrapper">
+      <div className={styles.titleWrapper}>
         <Typerio input={[topObjects, typerioConfig]} />
       </div>
-      <div className="subtitle-wrapper">
-        <p className="subtitle-text">
+      <div className={styles.titleWrapper}>
+        <p className={styles.subtitleText}>
           Simple and easy-to-use npm package for creating typing-like animations
           with React and TypeScript support!
         </p>
       </div>
-      <div className="cards">
+      <div className={styles.cards}>
         <InstallLink
           name={"HTML"}
           iconLink={"/icon--html.svg"}

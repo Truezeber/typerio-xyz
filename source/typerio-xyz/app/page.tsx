@@ -4,7 +4,7 @@ import PageNavbar from "@/components/MainPageNavbar";
 import InstallLink from "@/components/InstallLink";
 
 //import "@/styles/global.scss";
-import styles from "@/styles/home.module.scss";
+import styles from "@/styles/home.module.css";
 
 export default function Home() {
   const typerioConfig: TyperioConfig = {
@@ -15,7 +15,7 @@ export default function Home() {
   const topObjects: TyperioInput[] = [
     {
       text: "Typerio ",
-      style: `${styles.titleText}`,
+      style: `${styles.typerio}`,
       element: "h1",
     },
   ];

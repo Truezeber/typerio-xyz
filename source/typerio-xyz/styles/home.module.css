@@ -1,0 +1,77 @@
+.body {
+    margin: 0;
+}
+
+.typerio {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+
+    margin: 10px 0px;
+    font-size: 250%;
+
+    text-shadow: 0px 3px 2px var(--yellow);
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 2.5vh;
+
+    min-height: 8vh;
+}
+
+.titleText {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+
+    margin: 10px 0px;
+    font-size: 250%;
+
+    text-shadow: 0px 3px 2px var(--yellow);
+}
+
+.titleIcon {
+    height: 8vh;
+    margin: 0 1vw;
+
+    transition: transform 0.2s;
+
+    animation-name: float;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.subtitleWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitleText {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+
+    font-size: 150%;
+    text-shadow: 0px 3px 2px var(--red);
+
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

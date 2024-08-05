@@ -9,19 +9,14 @@ import "@/styles/_global.scss";
 export default function Home() {
   const typerioConfig: TyperioConfig = {
     frames: ["", "_"],
-    speed: 50,
+    speed: 55,
   };
 
   const topObjects: TyperioInput[] = [
     {
-      text: "Typerio⌨️",
-      style: "typerio-title",
+      text: "Typerio ",
+      style: "title-text",
       element: "h1",
-    },
-    {
-      text: "Simple and easy-to-use npm package for creating such animations!",
-      style: "typerio-description",
-      element: "p",
     },
   ];
 
@@ -38,12 +33,12 @@ export default function Home() {
     <>
       <PageNavbar />
       <div className="title-wrapper">
-        <h1 className="title-text">Typerio</h1>
-        <img src="./keycap.svg" alt="" className="title-icon" />
+        <Typerio input={[topObjects, typerioConfig]} />
       </div>
       <div className="subtitle-wrapper">
         <p className="subtitle-text">
-          Simple and easy-to-use npm package for creating typing animations!
+          Simple and easy-to-use npm package for creating typing-like animations
+          with React and TypeScript support!
         </p>
       </div>
       <div className="cards">

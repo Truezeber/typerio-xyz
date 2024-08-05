@@ -1,7 +1,4 @@
 import type { Metadata } from "next";
-import Footer from "@/components/Footer";
-
-//import "@/styles/_global.scss";
 
 export const metadata: Metadata = {
   title: "Typerio",
@@ -18,10 +15,7 @@ export default function RootLayout({
       <head>
         <link rel="icon" href="/typerio-logo.svg" sizes="any" />
       </head>
-      <body>
-        {children}
-        {/* <Footer /> */}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }

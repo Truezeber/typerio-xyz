@@ -1,5 +1,5 @@
 "use client";
-import "@/styles/InstallLink.scss";
+import styles from "@/styles/InstallLink.module.scss";
 interface ComponentProps {
   name: string;
   iconLink: string;
@@ -24,27 +24,27 @@ const InstallLink: React.FC<ComponentProps> = ({
     }
   };
   return (
-    <div className="InstallLinkComponent">
-      <div className="top-wrapper">
-        <h2 className="title">{name}</h2>
-        <img className="techIcon" src={iconLink} alt="" />
+    <div className={styles.InstallLinkComponent}>
+      <div className={styles.topWrapper}>
+        <h2 className={styles.title}>{name}</h2>
+        <img className={styles.techIcon} src={iconLink} alt="" />
       </div>
-      <p className="command-wrapper">
-        <span className="command">{command}</span>
+      <p className={styles.commandWrapper}>
+        <span className={styles.command}>{command}</span>
         <img
-          className="icon"
+          className={styles.icon}
           src="/icon--copy.svg"
           title="copy command"
           alt=""
           onClick={handleCopy}
         />
       </p>
-      <p className="links-wrapper">
-        <a title="NPM page" href={npmLink} className="link">
-          <img className="link-icon" src="/icon--npm.svg" alt="" />
+      <p className={styles.linksWrapper}>
+        <a title="NPM page" href={npmLink} className={styles.link}>
+          <img className={styles.linkIcon} src="/icon--npm.svg" alt="" />
         </a>
-        <a title="GitHub repository" href={gitLink} className="link">
-          <img className="link-icon" src="/icon--github.svg" alt="" />
+        <a title="GitHub repository" href={gitLink} className={styles.link}>
+          <img className={styles.linkIcon} src="/icon--github.svg" alt="" />
         </a>
       </p>
     </div>

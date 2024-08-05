@@ -78,7 +78,7 @@
 
     width: 50px;
 
-    &-icon {
+    &Icon {
         transition: transform 0.2s;
         
         height: 5vh;
@@ -91,7 +91,7 @@
     }
 }
 
-.command-wrapper {
+.commandWrapper {
     display: flex;
     align-items: center;
 
@@ -102,7 +102,7 @@
     margin: 0;
 }
 
-.links-wrapper {
+.linksWrapper {
     display: flex;
 
     height: 7vh;
@@ -110,7 +110,7 @@
     margin: 0;
 }
 
-.top-wrapper {
+.topWrapper {
     display: flex;
     align-items: center;
 }

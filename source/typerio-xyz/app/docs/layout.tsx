@@ -3,9 +3,10 @@ import type { Metadata } from "next";
 import "@/components/DocsNavbar";
 
 import "@/styles/_global.scss";
-import "@/styles/docs.scss";
 import "@/styles/edge-light.css";
 import "remark-github-blockquote-alert/alert.css";
+
+import styles from "@/styles/docs.module.scss";
 
 import Navbar from "@/components/DocsNavbar";
 
@@ -25,8 +26,10 @@ export default function RootLayout({
         <link rel="icon" href="/typerio-logo.svg" sizes="any" />
       </head>
       <body>
-        <Navbar />
-        <div className="page">{children}</div>
+        <div className={styles.body}>
+          <Navbar />
+          <div className={styles.page}>{children}</div>
+        </div>
       </body>
     </html>
   );

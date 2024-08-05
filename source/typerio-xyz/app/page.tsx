@@ -4,6 +4,7 @@ import InstallLink from "@/components/InstallLink";
 import PageNavbar from "@/components/MainPageNavbar";
 
 import "@/styles/home.scss";
+import "@/styles/_global.scss";
 
 export default function Home() {
   const typerioConfig: TyperioConfig = {

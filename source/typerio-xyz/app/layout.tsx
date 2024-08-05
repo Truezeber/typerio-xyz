@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Footer from "@/components/Footer";
 
-import "@/styles/_global.scss";
+//import "@/styles/_global.scss";
 
 export const metadata: Metadata = {
   title: "Typerio",

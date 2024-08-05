@@ -63,7 +63,7 @@
 .navbar {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-start;
 
     border-right: 2px solid var(--grey1);
 
@@ -71,6 +71,7 @@
     height: 99vh;
     min-height: 200px;
     overflow: auto;
+    overflow-x: hidden;
 
     padding: 0.5vh 1vw 0.5vh 1.5vw;
 
@@ -91,6 +92,11 @@
 }
 
 .navBot {
+    position: absolute;
+    bottom: 0;
+    left: 1vw;
+
+    width: 100%;
     .link {
         display: flex;
         justify-content: center;

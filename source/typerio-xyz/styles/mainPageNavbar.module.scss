@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 @import "_variables";
 
 .navbar {
@@ -17,6 +19,9 @@
             max-width: 55px;
         }
         &Text {
+            font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+
             font-weight: 600;
             font-size: 250%;
             margin: 0;
@@ -54,6 +59,9 @@
             }
         }
         &Link {
+            font-family: "Nunito", sans-serif;
+        font-optical-sizing: auto;
+        
             font-weight: 500;
             font-size: 150%;
 

@@ -15,7 +15,7 @@ export default function Home() {
   const topObjects: TyperioInput[] = [
     {
       text: "Typerio ",
-      style: "title-text",
+      style: `${styles.titleText}`,
       element: "h1",
     },
   ];

@@ -3,7 +3,7 @@ import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
 import InstallLink from "@/components/InstallLink";
 import PageNavbar from "@/components/MainPageNavbar";
 
-import "@/styles/_global.scss";
+import "@/styles/global.scss";
 import styles from "@/styles/home.module.scss";
 
 export default function Home() {

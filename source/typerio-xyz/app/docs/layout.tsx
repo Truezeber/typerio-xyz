@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 
 import "@/components/DocsNavbar";
 
-import "@/styles/_global.scss";
+import "@/styles/global.scss";
 import "@/styles/edge-light.css";
 import "remark-github-blockquote-alert/alert.css";
 

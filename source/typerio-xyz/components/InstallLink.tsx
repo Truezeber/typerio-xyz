@@ -33,7 +33,8 @@ const InstallLink: React.FC<ComponentProps> = ({
         <span className="command">{command}</span>
         <img
           className="icon"
-          src="/keycap.svg" //! <--- placeholder icon, replace asap
+          src="/icon--copy.svg"
+          title="copy command"
           alt=""
           onClick={handleCopy}
         />

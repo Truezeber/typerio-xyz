@@ -1,9 +1,8 @@
 "use client";
+import styles from "@/styles/docsNavbar.module.css";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-import styles from "@/styles/docsNavbar.module.css";
 
 const Navbar = () => {
   const pathname = usePathname();

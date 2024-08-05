@@ -1,7 +1,7 @@
 @import "_variables";
 
 .title {
-    &-wrapper {
+    &Wrapper {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -9,13 +9,13 @@
         padding-top: 10vh;
     }
 
-    &-text {
+    &Text {
         margin: 10px 0px;
         font-size: 250%;
 
         text-shadow: 0px 3px 2px $yellow;
     }
-    &-icon {
+    &Icon {
         height: 8vh;
         margin: 0 1vw;
 
@@ -29,12 +29,12 @@
 }
 
 .subtitle {
-    &-wrapper {
+    &Wrapper {
         display: flex;
         justify-content: center;
     }
 
-    &-text {
+    &Text {
         font-size: 150%;
         text-shadow: 0px 3px 2px $red;
 

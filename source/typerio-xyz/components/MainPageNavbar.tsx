@@ -1,19 +1,19 @@
-import "@/styles/mainPageNavbar.scss";
+import styles from "@/styles/mainPageNavbar.module.scss";
 
 const PageNavbar = () => {
   return (
-    <div className="navbar">
-      <div className="navbar-logo">
+    <div className={styles.navbar}>
+      <div className={styles.navbarLogo}>
         <img
-          className="navbar-logo-icon"
+          className={styles.navbarLogoIcon}
           src="./typerio-logo.svg"
           alt="typerio logo"
         />
-        <p className="navbar-logo-text">Typerio</p>
+        <p className={styles.navbarLogoText}>Typerio</p>
       </div>
-      <div className="navbar-links">
-        <div className="navbar-links-linkWrapper">
-          <a className="navbar-links-link" id="docs" href="/docs">
+      <div className={styles.navbarLinks}>
+        <div className={styles.navbarLinksLinkWrapper}>
+          <a className={styles.navbarLinksLink} id="docs" href="/docs">
             docs
           </a>
         </div>

@@ -10,13 +10,13 @@
     position: relative;
     left: 0;
     top: 0;
-    &-logo {
+    &Logo {
         display: flex;
         padding-left: 2%;
-        &-icon {
+        &Icon {
             max-width: 55px;
         }
-        &-text {
+        &Text {
             font-weight: 600;
             font-size: 250%;
             margin: 0;
@@ -26,11 +26,11 @@
             user-select: none;
         }
     }
-    &-links {
+    &Links {
         display: flex;
         align-items: center;
         padding-right: 2%;
-        &-linkWrapper {
+        &LinkWrapper {
             height: 70%;
             width: auto;
 
@@ -53,7 +53,7 @@
                 }
             }
         }
-        &-link {
+        &Link {
             font-weight: 500;
             font-size: 150%;
 

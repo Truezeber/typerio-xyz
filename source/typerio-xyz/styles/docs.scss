@@ -1,7 +1,7 @@
 @import "_variables";
 
 body {
-    margin: 0 8px 0 0;
+    display: flex;
 }
 
 .page {
@@ -9,31 +9,4 @@ body {
     margin-bottom: 50px;
 
     max-width: 70vw;
-}
-
-#__next {
-    display: flex;
-
-    position: relative;
-    min-height: 100vh;
-    width: 100%;
-}
-
-//* markdown styling
-
-.markdown-alert {
-    background-color: $grey4;
-
-    p {
-        color: $grey3;
-    }
-}
-
-a {
-    color: $brown1;
-    text-decoration: none;
-
-    &:hover {
-        text-decoration: underline;
-    }
 }

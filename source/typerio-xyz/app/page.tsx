@@ -1,24 +1,22 @@
 import { Typerio } from "typerio-react";
 import { TyperioConfig, TyperioInput } from "typerio-react/dist/Typerio";
 import InstallLink from "@/components/InstallLink";
+import PageNavbar from "@/components/MainPageNavbar";
+
 import "@/styles/home.scss";
+import "@/styles/_global.scss";
 
 export default function Home() {
   const typerioConfig: TyperioConfig = {
     frames: ["", "_"],
-    speed: 50,
+    speed: 55,
   };
 
   const topObjects: TyperioInput[] = [
     {
-      text: "Typerio⌨️",
-      style: "typerio-title",
+      text: "Typerio ",
+      style: "title-text",
       element: "h1",
-    },
-    {
-      text: "Simple and easy-to-use npm package for creating such animations!",
-      style: "typerio-description",
-      element: "p",
     },
   ];
 
@@ -33,44 +31,31 @@ export default function Home() {
   };
   return (
     <>
-      <div className="top section">
+      <PageNavbar />
+      <div className="title-wrapper">
         <Typerio input={[topObjects, typerioConfig]} />
       </div>
-      <div className="topmid section">
+      <div className="subtitle-wrapper">
+        <p className="subtitle-text">
+          Simple and easy-to-use npm package for creating typing-like animations
+          with React and TypeScript support!
+        </p>
+      </div>
+      <div className="cards">
         <InstallLink
           name={"HTML"}
+          iconLink={"/icon--html.svg"}
           command={"npm i typerio"}
           npmLink={typerio.npmLink}
           gitLink={typerio.gitLink}
         />
         <InstallLink
           name={"React"}
+          iconLink={"/icon--react.svg"}
           command={"npm i typerio-react"}
           npmLink={typerioReact.npmLink}
           gitLink={typerioReact.gitLink}
         />
-      </div>
-      <div className="botmid section">
-        <img
-          alt="NPM Downloads"
-          src="https://img.shields.io/npm/dy/typerio-react?label=typerio-react&color=yellow"
-        />
-        <img
-          alt="NPM Downloads"
-          src="https://img.shields.io/npm/dy/typerio?label=typerio&color=blue"
-        />
-        <h2>Looks interesting?</h2>
-        <div className="wrapper">
-          <a href="/docs">
-            <p>Typerio docs🔗</p>
-          </a>
-          <a href="/docs/typerio">
-            <p>Typerio guide🔗</p>
-          </a>
-          <a href="/docs/typerio-react">
-            <p>Typerio-react guide🔗</p>
-          </a>
-        </div>
       </div>
     </>
   );

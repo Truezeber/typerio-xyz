@@ -1,18 +1,27 @@
 @import "_variables";
 
 .InstallLinkComponent {
-    background-color: $brown4;
-    width: 16vw;
-    height: 132px;
+    width: 20vw;
+    height: fit-content;
 
     margin: 20px;
 
     border-radius: 20px;
+    border: 2px solid $grey1;
 
     overflow: hidden;
 
-    & .title, .command {
-        text-align: center;
+    & .title {
+        text-align: left;
+        margin-left: 5%;
+
+        font-weight: 500;
+        font-size: 150%;
+    }
+
+    & .command {
+        text-align: left;
+        margin-left: 5%;
     }
 
     .wrapper {
@@ -32,7 +41,7 @@
         font-weight: 400;
         font-style: normal;
 
-        color: $grey2;
+        color: #FFF;
         
 
         height: fit-content;
@@ -41,7 +50,9 @@
     & .icon {
         transition: 0.2s;
 
-        opacity: 0;
+        filter: invert(100%) sepia(0%) saturate(7487%) hue-rotate(10deg) brightness(117%) contrast(103%);
+
+        opacity: 0.5;
 
         width: 15px;
         position: relative;
@@ -51,7 +62,7 @@
             transition: 0.2s;
 
             opacity: 1;
-            
+
             cursor: pointer;
         }
     }
@@ -59,7 +70,7 @@
 
 .link {
         
-    margin: 0px 10%;
+    margin: 0px 0.5vh;
 
     display: flex;
     align-items: center;
@@ -70,12 +81,61 @@
     &-icon {
         transition: transform 0.2s;
         
-        height: 80%;
+        height: 5vh;
 
         &:hover {
-            transform: scale(1.2);
+            animation-name: rotate;
+            animation-duration: 1s;
+            //animation-iteration-count: infinite;
         }
     }
 }
 
+.command-wrapper {
+    display: flex;
+    align-items: center;
 
+    background-color: $grey1;
+    height: 5vh;
+    width: 100%;
+
+    margin: 0;
+}
+
+.links-wrapper {
+    display: flex;
+
+    height: 7vh;
+    width: 100%;
+    margin: 0;
+}
+
+.top-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.techIcon {
+    height: 5vh;
+    margin: 0px 0.5vh;
+}
+
+//animations
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(30deg);
+    }
+    50% {
+        transform: rotate(-30deg);
+    }
+    75% {
+        transform: rotate(30deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}

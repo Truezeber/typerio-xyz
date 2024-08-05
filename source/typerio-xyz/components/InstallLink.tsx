@@ -2,6 +2,7 @@
 import "@/styles/InstallLink.scss";
 interface ComponentProps {
   name: string;
+  iconLink: string;
   command: string;
   npmLink: string;
   gitLink: string;
@@ -9,6 +10,7 @@ interface ComponentProps {
 
 const InstallLink: React.FC<ComponentProps> = ({
   name,
+  iconLink,
   command,
   npmLink,
   gitLink,
@@ -16,28 +18,33 @@ const InstallLink: React.FC<ComponentProps> = ({
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(command);
+      alert("Command copied!");
     } catch (error) {
       console.error(`Cannot copy: ${error}`);
     }
   };
   return (
     <div className="InstallLinkComponent">
-      <h2 className="title">{name}</h2>
-      <p className="wrapper">
+      <div className="top-wrapper">
+        <h2 className="title">{name}</h2>
+        <img className="techIcon" src={iconLink} alt="" />
+      </div>
+      <p className="command-wrapper">
         <span className="command">{command}</span>
         <img
           className="icon"
-          src="/copy.svg"
-          alt="copy icon"
+          src="/icon--copy.svg"
+          title="copy command"
+          alt=""
           onClick={handleCopy}
         />
       </p>
-      <p className="wrapper">
-        <a href={npmLink} className="link">
-          <img className="link-icon" src="/npm.svg" alt="npm icon" />
+      <p className="links-wrapper">
+        <a title="NPM page" href={npmLink} className="link">
+          <img className="link-icon" src="/icon--npm.svg" alt="" />
         </a>
-        <a href={gitLink} className="link">
-          <img className="link-icon" src="/github.svg" alt="GitHub icon" />
+        <a title="GitHub repository" href={gitLink} className="link">
+          <img className="link-icon" src="/icon--github.svg" alt="" />
         </a>
       </p>
     </div>

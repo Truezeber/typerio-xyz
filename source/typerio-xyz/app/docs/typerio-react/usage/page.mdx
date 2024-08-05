@@ -1,14 +1,6 @@
-import MdxLayout from '@/components/mdx-layout'
- 
-# Typerio-react
+# Usage
 
-## How to use typerio-react
-First of all you have to install the package from npm. You can do it using commad bellow.
-
-```console
-$ npm i typerio-react
-```
-The next step will be importing ``Typerio`` component in the designated place.
+Firstly import *Typerio* into your project.
 
 ```ts
 import { Typerio } from 'typerio-react';
@@ -48,19 +40,3 @@ return (
 
 > [!IMPORTANT]  
 > ``Typerio`` is a client-side component. Keep in mind the negative impact of its content on your site's SEO.
-
-## How to use it with typescript
-
-Typerio-react is primarly built using typescript, which means that you can import types definition and use it for type safety.
-
-```ts
-import { TyperioInput, TyperioConfig } from "typerio-react/dist/Typerio";
-
-const inputArray: TyperioInput[] = [/*...*/]
-const configurationObject: TyperioConfig = {/*...*/};
-```
-With all of that you should be able to use Typerio freely in your project.
-
-export default function MDXPage({ children }) {
-  return <MdxLayout>{children}</MdxLayout>
-}

@@ -1,55 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import "_variables";
 
 * {
-    
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
 }
 
 body {
-    overflow-x: hidden;
-}
-
-h1 {
-    color: $yellow;
-
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h2 {
-    color: $yellow;
-
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h3 {
-    color: $yellow;
-
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-h4 {
-    color: $yellow;
-
-    font-family: "PT Serif", serif;
-    font-weight: 700;
-    font-style: normal;
-}
-
-p,ul,li {
-    color: $brown1;
-
-    font-family: "PT Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-body {
-    background-color: $brown3;
+    margin: 0;
 }

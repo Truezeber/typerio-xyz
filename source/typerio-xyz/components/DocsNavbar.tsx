@@ -3,16 +3,18 @@ import styles from "@/styles/docsNavbar.module.css";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [isActive, setIsActive] = useState(false);
 
-  const isActive = (path: string) => {
-    return pathname === path ? "active" : "";
+  const handleClick = () => {
+    setIsActive(!isActive);
   };
 
   return (
-    <div className={`${styles.navbar} ${styles.active}`}>
+    <div className={`${styles.navbar} ${isActive ? styles.active : ""}`}>
       <div className={styles.navTop}>
         <h1 className={`${styles.title} ${styles.titleH}`}>
           <Link href="/docs" className={styles.titleA}>
@@ -176,7 +178,9 @@ const Navbar = () => {
         </a>
       </div>
       <div className={styles.navMobileBot}>
-        <button className={styles.navMobileButton}>menu</button>
+        <button className={styles.navMobileButton} onClick={handleClick}>
+          menu
+        </button>
       </div>
     </div>
   );

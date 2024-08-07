@@ -12,7 +12,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${styles.active}`}>
       <div className={styles.navTop}>
         <h1 className={`${styles.title} ${styles.titleH}`}>
           <Link href="/docs" className={styles.titleA}>
@@ -176,7 +176,7 @@ const Navbar = () => {
         </a>
       </div>
       <div className={styles.navMobileBot}>
-        <button className={styles.navMobileButton}> xyz</button>
+        <button className={styles.navMobileButton}>menu</button>
       </div>
     </div>
   );

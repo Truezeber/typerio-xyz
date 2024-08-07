@@ -3,16 +3,18 @@ import styles from "@/styles/docsNavbar.module.css";
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState } from "react";
 
 const Navbar = () => {
   const pathname = usePathname();
+  const [isActive, setIsActive] = useState(false);
 
-  const isActive = (path: string) => {
-    return pathname === path ? "active" : "";
+  const handleClick = () => {
+    setIsActive(!isActive);
   };
 
   return (
-    <div className={styles.navbar}>
+    <div className={`${styles.navbar} ${isActive ? styles.activeNavbar : ""}`}>
       <div className={styles.navTop}>
         <h1 className={`${styles.title} ${styles.titleH}`}>
           <Link href="/docs" className={styles.titleA}>
@@ -174,6 +176,11 @@ const Navbar = () => {
           <p className={styles.p}> Home page</p>
           <img src="/icon--house.svg" alt="" className={styles.icon} />
         </a>
+      </div>
+      <div className={styles.navMobileBot}>
+        <button className={styles.navMobileButton} onClick={handleClick}>
+          ◉◉◉
+        </button>
       </div>
     </div>
   );

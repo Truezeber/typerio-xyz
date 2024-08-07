@@ -66,6 +66,12 @@
     }
 }
 
+@media only screen and (min-width: 768px) {
+    .installLinkComponent {
+        width: 22%;
+    }
+}
+
 .link {
     margin: 0px 0.5vh;
 

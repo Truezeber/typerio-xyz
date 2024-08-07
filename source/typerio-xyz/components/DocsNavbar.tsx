@@ -17,7 +17,7 @@ const Navbar = () => {
     <div className={`${styles.navbar} ${isActive ? styles.activeNavbar : ""}`}>
       <div className={styles.navTop}>
         <h1 className={`${styles.title} ${styles.titleH}`}>
-          <Link href="/docs" className={styles.titleA}>
+          <Link href="/docs" className={styles.titleA} onClick={handleClick}>
             Typerio Docs
           </Link>
         </h1>
@@ -33,6 +33,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/typerio-html/installation"
+              onClick={handleClick}
             >
               Instalation
             </Link>
@@ -45,6 +46,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/typerio-html/basic-usage"
+              onClick={handleClick}
             >
               Basic usage
             </Link>
@@ -57,6 +59,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/typerio-html/advanced-usage"
+              onClick={handleClick}
             >
               Advanced usage
             </Link>
@@ -67,6 +70,7 @@ const Navbar = () => {
                 pathname === "/docs/typerio-html/examples" ? styles.active : ""
               }`}
               href="/docs/typerio-html/examples"
+              onClick={handleClick}
             >
               Examples
             </Link>
@@ -84,6 +88,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/typerio-react/installation"
+              onClick={handleClick}
             >
               Instalation
             </Link>
@@ -94,6 +99,7 @@ const Navbar = () => {
                 pathname === "/docs/typerio-react/usage" ? styles.active : ""
               }`}
               href="/docs/typerio-react/usage"
+              onClick={handleClick}
             >
               Component usage
             </Link>
@@ -106,6 +112,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/typerio-react/typescript"
+              onClick={handleClick}
             >
               Typescript
             </Link>
@@ -116,6 +123,7 @@ const Navbar = () => {
                 pathname === "/docs/typerio-react/examples" ? styles.active : ""
               }`}
               href="/docs/typerio-react/examples"
+              onClick={handleClick}
             >
               Examples
             </Link>
@@ -131,6 +139,7 @@ const Navbar = () => {
                 pathname === "/docs/contributing/coc" ? styles.active : ""
               }`}
               href="/docs/contributing/coc"
+              onClick={handleClick}
             >
               Code of conduct
             </Link>
@@ -143,6 +152,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/contributing/chosing-project"
+              onClick={handleClick}
             >
               Chosing a project
             </Link>
@@ -153,6 +163,7 @@ const Navbar = () => {
                 pathname === "/docs/contributing/issues" ? styles.active : ""
               }`}
               href="/docs/contributing/issues"
+              onClick={handleClick}
             >
               Reporting issues
             </Link>
@@ -165,6 +176,7 @@ const Navbar = () => {
                   : ""
               }`}
               href="/docs/contributing/pull-request"
+              onClick={handleClick}
             >
               Pull requests
             </Link>

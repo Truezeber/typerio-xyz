@@ -114,3 +114,18 @@
 .section {
     padding-left: 1vw;
 }
+
+.navMobileBot {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navMobileButton {
+}

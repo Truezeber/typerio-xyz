@@ -175,6 +175,9 @@ const Navbar = () => {
           <img src="/icon--house.svg" alt="" className={styles.icon} />
         </a>
       </div>
+      <div className={styles.navMobileBot}>
+        <button className={styles.navMobileButton}> xyz</button>
+      </div>
     </div>
   );
 };

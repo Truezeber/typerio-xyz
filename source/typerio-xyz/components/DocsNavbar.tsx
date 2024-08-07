@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className={`${styles.navbar} ${isActive ? styles.active : ""}`}>
+    <div className={`${styles.navbar} ${isActive ? styles.activeNavbar : ""}`}>
       <div className={styles.navTop}>
         <h1 className={`${styles.title} ${styles.titleH}`}>
           <Link href="/docs" className={styles.titleA}>
@@ -179,7 +179,7 @@ const Navbar = () => {
       </div>
       <div className={styles.navMobileBot}>
         <button className={styles.navMobileButton} onClick={handleClick}>
-          menu
+          ◉◉◉
         </button>
       </div>
     </div>

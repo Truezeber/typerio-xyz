@@ -1,11 +1,5 @@
-@media only screen and (min-width: 768px) {
-    .installLinkComponent {
-        width: 20vw !important;
-    }
-}
-
 .installLinkComponent {
-    width: 50vw;
+    width: 40%;
     height: fit-content;
 
     margin: 20px;

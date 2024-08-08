@@ -35,7 +35,7 @@ const Navbar = () => {
               href="/docs/typerio-html/installation"
               onClick={handleClick}
             >
-              Instalation
+              Installation
             </Link>
           </li>
           <li>
@@ -90,7 +90,7 @@ const Navbar = () => {
               href="/docs/typerio-react/installation"
               onClick={handleClick}
             >
-              Instalation
+              Installation
             </Link>
           </li>
           <li>
@@ -147,14 +147,14 @@ const Navbar = () => {
           <li>
             <Link
               className={`${styles.link} ${
-                pathname === "/docs/contributing/chosing-project"
+                pathname === "/docs/contributing/choosing-project"
                   ? styles.active
                   : ""
               }`}
-              href="/docs/contributing/chosing-project"
+              href="/docs/contributing/choosing-project"
               onClick={handleClick}
             >
-              Chosing a project
+              Choosing a project
             </Link>
           </li>
           <li>

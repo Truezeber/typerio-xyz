@@ -15,6 +15,11 @@ $ gh repo clone Truezeber/typerio-xyz
 ```console
 $ cd source/typerio-xyz
 ```
+- Install the dependencies;
+
+```console
+$ npm install
+```
 - Start the app;
 
 ```console

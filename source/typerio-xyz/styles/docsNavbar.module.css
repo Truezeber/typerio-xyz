@@ -102,11 +102,9 @@
 .navBot {
     position: relative;
 
-    width: fit-content;
     .link {
         display: flex;
         justify-content: center;
-
         font-size: 1.2rem;
 
         .p {
@@ -141,9 +139,7 @@
     border: 1px solid var(--grey1);
     border-radius: 6px;
     background-color: #fff;
-
     height: 4vh;
-
     color: var(--grey2);
     font-size: 0.6rem;
 }
@@ -152,20 +148,16 @@
     .navbar {
         position: sticky;
         top: 0;
-
         width: fit-content;
         height: 99vh;
-
-        overflow: auto;
-
+        overflow: hidden;
         border-right: 2px solid var(--grey1);
     }
 
     .navBot {
         position: absolute;
-        bottom: 0;
-        left: 1vw;
-
+        bottom: 4px;
+        left: 10px;
         width: 100%;
     }
 

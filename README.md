@@ -25,3 +25,5 @@ $ npm install
 ```console
 $ npm run dev
 ```
+
+Quoting notes: [docs/basic-usage-quoting.md](docs/basic-usage-quoting.md).
